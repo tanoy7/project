@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada97;
+}
+#container{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 3px solid #baabba;
+padding: 10px 20px;
+height: 80px;
+/* background-color: grey; */
+
+
+}
+#nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#nav-content h3:hover{
+    color: rgb(0, 162, 255);
+    border-bottom: 2px solid #dadada97;
+}
+#nav-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+#search-button{
+    height: 23px;
+    width: 55px;
+    border-radius: 3px;
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+#search-bar{
+    height: 23px;
+    width: 150px;
+    border-radius: 2px;
+    padding: 7px;
+}
+#cardData{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.card{
+    background-color: #fff;
+    width: 320px;
+    padding: 7px;
+    margin-top: 25px;
+    cursor: pointer;
+    height: 370px;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    
+}
+.card h3,p{
+    margin-top: 10px;
+    padding: 2px;
+
+}
+#catagory{
+
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+@media only screen and (max-width:850px) {
+
+   #nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    color: #fff;
+    background-color: #000;
+   }
+   #nav-logo{
+    padding-bottom: 3rem;
+    /* padding-top: 1.3rem; */
+   }
+   #nav-content{
+    /* padding-bottom: 3.5rem; */
+    opacity: 0;
+
+    
+   }
+   #catagory{
+    opacity: 0;
+    
+    
+    }
+    #nav-search{
+        position: absolute;
+        top: 5%;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
